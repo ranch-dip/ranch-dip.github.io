@@ -1,0 +1,293 @@
+
+ * { padding: 0; margin: 0;}
+
+html {
+  scroll-behavior: smooth;
+}
+ body {
+	top: 0;
+  bottom: 0;
+	color: black;
+  font-family: "Amatic SC", sans-serif;
+  min-height: 100%;
+	font-size: 16px;
+  background-repeat: repeat;
+  background-color: black;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  margin: 0px;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+.logo-container {
+	padding-left: 8%;
+	top: 0;
+	bottom: 0;
+  position: fixed;
+  z-index: 2;
+
+}
+.head-container {
+  width: 100%;
+  background-image: url('images/pattern.jpg');
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  height: 50px;
+  text-align: center;
+  position: sticky;
+  z-index: 1;
+
+}
+.head-list-container {
+  width: 100%;
+  z-index: 1;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#headlist {
+display: inline-block;
+text-align: center;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+padding-left: 12.5%; 
+z-index: 1;
+
+}
+
+li {
+  float: left;
+  margin: 0 auto;
+}
+
+li a {
+  display:block;
+  color: floralwhite;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 32px;
+  margin: 0 auto ;
+  overflow: hidden;
+}
+
+li a:hover {
+  background-color:green;
+  margin: 0 auto;
+ }
+h1 {
+  color:#ff6961;
+  text-decoration-line: underline;
+  text-decoration-color: green;
+  font-size: 64px;
+
+}
+h2 {
+  color:floralwhite;
+}
+
+
+.slideshow-container  {
+    width:100%;
+    height: 550px;
+    background-color:whitesmoke;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+
+
+}
+#slide {
+      opacity:1;
+      transition: opacity 1s; 
+      height: 550px;
+      width:100%;
+      position: relative;
+    }
+    
+    #slide.fadeOut {
+      opacity:0;
+      height: 550px;
+      width:100%;
+    }
+  .smoke-container {
+    background-color: #303030;
+    width: 100%;
+    height: 202px;
+    font-size: 56px;
+    text-align: center;
+    justify-content: center;
+    color:floralwhite;
+
+  }
+  
+  .welcome {
+    position: absolute;
+    vertical-align: center;
+    margin: 0 auto;
+    width: 300px;
+    font-size: 48px;
+    color:floralwhite;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
+    
+  }
+
+
+.bio-sign-container  {
+  display: flex;
+  width:100%;
+
+}
+
+.quick-bio  {
+  width: 50%;
+  text-align: center;
+  background-color: black;
+  justify-content: center;
+  padding-top: 4%;
+  font-size: 18px;
+}
+
+.sign-container {
+  width: 50%;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+
+}
+.sign-right {
+  width:"450" ;
+  height:"400" ;
+  padding-left: 6%;
+  padding-top: 8%;
+
+}
+.contact-container {
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  text-align: center;
+  overflow: hidden;
+  
+}
+#info-list {
+  display: inline-block;
+}
+#info-list > li  {
+  display:block;
+  color: #ff6961;
+  text-align: center;
+  text-decoration: none;
+  padding: 64px;
+  font-size: 32px;
+  margin: auto;
+  overflow: hidden;
+ 
+}
+#info-list > li > p {
+  color: white;
+  font-size: 24px;
+
+}
+#info-list > li:nth-child(1) {
+  display: inline-block;
+}
+#info-list > li:nth-child(1) > ul {
+  display: block;
+ 
+}
+
+#info-list > li:nth-child(1) > ul > a {
+  display: block;
+  overflow: hidden;
+  
+}
+
+
+#info-list > li:nth-child(1) > ul > a:hover {
+ background-color: red;
+}
+#info-list > li:nth-child(3) {
+  overflow: hidden;
+}
+.fa-instagram-square {
+  color: green;
+  font-size: 32px;
+
+}
+
+
+.fa-facebook-square{
+  color: green;
+  font-size: 32px;
+  
+}
+
+#map {
+  height: 225px;
+  /* The height is 400 pixels */
+  width: 225px;
+  /* The width is the width of the web page */
+}
+.menu-container {
+  width:100%;
+  height: 750px;
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding-bottom: 0 auto;
+  
+}
+
+
+#menuz {
+  width: 600px;
+  height: 600px;
+  border: 25px solid transparent;
+  border-image: url('images/pattern.jpg') 30 round;
+  border-image-repeat: repeat;
+}
+.rental-container {
+  padding-top: 100px;
+  width:100%;
+  height: 750px;
+  justify-content: center;
+}
+.rent-bio {
+   text-align: center;
+   padding-top: 15px;
+}
+.rent-pic {
+  text-align: center;
+  padding-top: 25px;
+}
+
+#main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; 
+  background-image: url('images/pattern.jpg');
+  color: white;
+  text-align: center; 
+  text-indent: inherit;
+  height: 2.5rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}

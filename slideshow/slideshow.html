@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+   
+	var i=0;
+	var images=[];
+	var time=3000;
+
+   images[0] = 'uno.png'
+   images[1] =  'dos.png'
+   images[2] = 'quatro.png'
+   images[3] = 'cient.png'
+
+   function changeImg(){
+   	document.slide.src = images[i];
+   	if(i<images.length-1){
+   		i++;
+   	}else{
+   		i=0;
+   	} setTimeout('changeImg()', time);
+
+   	}
+   window.onload=changeImg;
+
+</script>
+<img src="slide" width="400" height="200">
+</body>
+</html>
